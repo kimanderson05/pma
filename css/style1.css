@@ -1,0 +1,375 @@
+/*
+CSS for LSC
+*/
+
+/* --------------------------Site-Wide------------------------*/
+body {
+	font: 100%/1.5 Helvetica, Arial, san-serif;
+	margin: 0;	
+	padding: 0;
+	background: #fff url("../images/background.jpg") repeat-x;
+}
+
+header, section, footer {
+	width: 960px;
+	margin: 0 auto;
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+	/* border: solid 2px #000; */
+}
+
+
+/*--------------------------- Typography ---------------------------*/
+h1, h2, h3, h4, h5 { 
+	color: #444; 
+	margin: 0;
+	text-align: center;
+	padding-top: 50px;
+	font: 48px "Noteworthy", cursive;
+}
+
+p { 
+	color: #666; 
+	margin: 0; 
+}
+
+#cta p {
+	color: #333;
+	text-align: center;
+	padding-top: 70px;
+}
+
+#welcome p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+h2 { 
+	text-align: center;
+	padding-top: 30px;
+	font: 24px "Noteworthy", san-serif; 
+}
+
+
+/*---------------------------Header & Footer CSS---------------------------*/
+header {
+	background-color: #f3f0eb;	
+	border-top: none;
+	padding-top: 20px;
+}
+
+header #branding {
+	float: left;
+	width: 400px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+header aside {
+	float: right;
+	width: 400px;
+	margin-top: 50px;
+	text-align: center;
+	background-color: #f3f0eb;
+	font: 25px "Noteworthy", cursive;
+}
+
+header aside a {
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	background-color: #94cff1;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+header aside strong:nth-of-type(1) { color: red; }
+header aside strong:nth-of-type(2) { color: blue; }
+
+header aside a:hover {
+	text-decoration: none;
+}
+
+nav {
+	clear: both;
+	height: 45px;
+	padding-bottom: 2px;
+	background-color: #f4bb61;
+	list-style-type: none;
+	display: block;
+}
+	
+nav li{	
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	padding: 15px;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link {
+	color: #36a6e8;
+}
+
+a:visited {
+	color: #0a3c59;
+}
+
+a:hover {
+	color: #ff0000;
+	opacity: 0.5;
+}
+
+a:active {
+	color: #3a4247;
+}
+
+footer {
+	margin-top: 30px;
+	padding: 20px;
+	clear: both;
+}
+
+/*---------------------------Index Page CSS---------------------------*/
+
+#cta {
+	background: url("../images/group1.jpg");
+	height: 350px;
+}
+
+
+article.content {
+	padding: 0% 2.083333%; /* 20px/960px */
+}
+
+table.events1 {
+	margin: 50px 20px;
+	border-collapse: collapse;
+	border: 1px solid #000;	
+}
+
+th {
+	text-align: left;
+	background: #666;
+	color: #fff;
+	border: 1px solid #000;
+	padding: 5px;
+	}
+	
+	td {
+	border: 1px solid #000;
+	padding: 5px;
+	}
+
+
+/*---------------------------Service Page CSS---------------------------*/
+
+.assessment li {
+	list-style-type: square;
+}
+
+/*---------------------------Photo Gallery Page CSS---------------------------*/
+
+#gallery {
+	margin: 17.708333% 4.166667%; /* 170px/960px 40px/960px */
+	padding: 3.125% 0%; /* 30px 0px */
+}
+
+.images li {
+	display: inline-block;
+	line-height: 25%; /*45px/180px*/
+	padding: 1.041667%; /* 10px/960px*/
+	width: 18.75%; /* 180px/960px*/
+	margin: 1.041667%; /*10px/960px*/
+}
+
+
+/*---------------------------Sign Up Page CSS---------------------------*/
+
+
+	input:focus {
+	background: #dddbdb;
+	}
+	
+	.signup_form {
+	margin: 50px 20px 0 20px;
+	padding: 20px 0px;
+	width: 47%;
+	float: left;
+	}
+	
+	.personal_info {
+	padding: 20px;
+	}
+	
+	.login_form {
+	padding: 20px;
+	}
+	
+	.tickets_form {
+	margin: 50px 20px;
+	padding: 20px;
+	width: 40%;
+	float: left;
+	}
+	
+	.formfield {
+		width: 150px;
+		margin: 0 auto;
+		float: right;
+	}
+	
+	.dropdown {
+		width: 75px;
+		float: right;
+	}
+	
+	
+/*------------------------------Media Queries------------------------------------*/
+
+/*----Tablet Portrait Size to Standard 960 (devices and browsers)----*/
+
+@media screen and (min-width:768px) and (max-width:959px) {
+	#wrapper {
+	border: none;
+	}
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	}
+	
+	#benefit {
+	width: 100%; /* 960px/960px */
+	height: 150px;
+	} 
+	
+	#navigation {
+	width: 100%; /* 960px/960px */
+	height: 70px;
+	padding: 0% 3.6458333%; /* 0px/960px 35px/960px */
+	}
+	
+	#puzzle {
+	display: none;
+	}
+	
+	.quote {
+	padding-left: 20%; /* 40px/200px */
+	}
+}
+
+/*----Mobile Landscape Size to Tablet Portrait (devices and browsers)----*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/*----sitewide----*/
+	#wrapper {
+	border: none;
+	}
+	
+	#group_pic img { display: none; }
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	}
+	
+	#benefit {
+	width: 100%; /* 960px/960px */
+	height: 150px;
+	} 
+	
+	#navigation {
+	width: 100%; /* 960px/960px */
+	height: 70px;
+	padding: 0% 3.6458333%; /* 0px/960px 35px/960px */
+	}
+	
+	#puzzle {
+	width: 100%; /* 960px */
+	}
+	
+	#puzzle1 {
+	margin-top: 5.2083333%; /* 50px/960px */
+	width: 26.041667%; /* 250px/960px */
+	float: left;
+	}
+	
+	#puzzle2 {
+	text-align: center;
+	margin-top: 7.8125%; /* 75px/960px */
+	padding-right: 5.2083333%; /* 50px/960px */
+	width: 41.666667%; /* 400px/960px */	
+	float: right;
+	}
+	
+	#welcome {
+	clear: both;
+	padding-top: 0%;
+	}
+	
+/*----service----*/
+	#extras {
+	-moz-column-count: 1;
+	}
+}
+
+/*----Mobile Portrait Size to Mobile Landscape Size (devices and browsers)----*/
+
+@media only screen and (max-width: 479px) {
+	
+	#group_pic img { display: none; }
+	
+
+	#wrapper {
+	border: none;
+	}
+	
+	#sitebranding {
+	width: 100%; /* 960px/960px */
+	}
+	
+	#benefit {
+	width: 100%; /* 465px/960px */
+	height: 140px;
+	} 
+
+	#navigation {
+	width: 100%; /* 960px/960px */
+	height: 225px;
+	padding: 0% 2.0833333%; /* 0px/960px 20px/960px */
+	}
+	
+	.mainnav li { 
+	display: block; 
+	line-height: 30px;
+	}
+	
+	#puzzle {
+	display: none;
+	}
+	
+	#extras {
+	-moz-column-count: 1;
+	}
+	
+	.images {
+	max-width: 100%;
+	height: 50px;
+	}
+	
+}

@@ -1,5 +1,7 @@
 /*
 CSS for LSC
+
+section background color:  #f3f0eb;
 */
 
 /* --------------------------Site-Wide------------------------*/
@@ -36,22 +38,16 @@ p {
 	margin: 0; 
 }
 
-#cta p {
+/*#cta p {
 	color: #333;
 	text-align: center;
 	padding-top: 70px;
-}
-
-#welcome p {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
+}*/
 
 h2 { 
 	text-align: center;
 	padding-top: 30px;
+	padding-bottom: 10px;
 	font: 24px "Noteworthy", san-serif; 
 }
 
@@ -147,14 +143,51 @@ footer {
 
 /*---------------------------Index Page CSS---------------------------*/
 
-#cta {
+/*#cta {
 	background: url("../images/group1.jpg");
 	height: 350px;
+}*/
+
+#video {
+	float: right;
+	margin-right: 240px;
+	background-color: #f3f0eb;
+	width: 640px;
 }
 
+#welcome {
+	background: #f3f0eb;
+}
+
+#welcome h1 {
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#welcome p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
+#welcome p:nth-of-type(1) {
+	padding-top: 40px;
+}
+
+#event_list table {
+	background-color: #f3f0eb;
+	}
+
+table.events {
+	float: right;
+	width: 500px;
+	padding-top: 35px;
+}
 
 article.content {
-	padding: 0% 2.083333%; /* 20px/960px */
+	padding-right: 150px; /* 20px/960px */
 }
 
 table.events1 {
@@ -179,8 +212,71 @@ th {
 
 /*---------------------------Service Page CSS---------------------------*/
 
-.assessment li {
-	list-style-type: square;
+#svcs {
+	background: #f3f0eb;
+}
+
+#school {
+	float:left;
+	background: #f3f0eb;
+	width: 470px;
+	margin-left: 240px;
+	padding-right: 25px;
+	padding-left: 20px;
+}
+
+#school_pic p {
+	background: #f3f0eb;
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
+#early_pic p {
+	float:left;
+	background: #f3f0eb;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 60px;	
+	padding-bottom: 11px;
+}
+
+#early {
+	background: #f3f0eb;
+	width: 580px;
+	margin-right: 240px;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-top: 50px;
+	padding-bottom: 69px;
+}
+
+#offer {
+	background: #f3f0eb;
+	clear: both;
+}
+
+#offer h1 {
+	padding-bottom: 0px;
+}
+#before {
+	float: left;
+	background: #f3f0eb;
+	width: 480px;
+	margin-left: 240px;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-top: 50px;
+	padding-bottom: 68px;
+}
+
+#home {
+	background: #f3f0eb;
+	width: 480px;
+	margin-right: 240px;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-top: 50px;
+	padding-bottom: 44px;
 }
 
 /*---------------------------Photo Gallery Page CSS---------------------------*/
@@ -196,6 +292,15 @@ th {
 	padding: 1.041667%; /* 10px/960px*/
 	width: 18.75%; /* 180px/960px*/
 	margin: 1.041667%; /*10px/960px*/
+}
+
+
+/*-------------------------Events Page CSS-------------------------------*/
+
+#upcoming {
+	background: #f3f0eb;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
